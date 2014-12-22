@@ -1,4 +1,4 @@
-$packageName = '{{PackageName}}'
+$packageName = 'cpu-z'
 $installerType = 'EXE'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $unpath = "$Env:ProgramFiles\CPUID\CPU-Z\unins000.exe"
