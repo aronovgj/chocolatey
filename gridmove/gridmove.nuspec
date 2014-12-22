@@ -14,7 +14,7 @@
     <copyright></copyright>
     <licenseUrl>http://creativecommons.org/licenses/by-nc-sa/3.0/us/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/jgpaiva/GridMove/master/other/GridMove.jpg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/gridmove.ico</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

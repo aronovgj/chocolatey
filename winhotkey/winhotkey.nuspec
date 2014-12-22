@@ -24,7 +24,7 @@ When running, the program sits in the system tray. Double-clicking on the system
     <copyright></copyright>
     <licenseUrl>http://creativecommons.org/licenses/by-nc-sa/3.0/us/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://i.computer-bild.de/imgs/3/6/8/6/2/8/0/Icon-WinHotKey-48x48-3ed4ebc15e5b8bcc.jpeg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/winhotkey.jpeg</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>
