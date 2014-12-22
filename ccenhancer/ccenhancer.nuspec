@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>ccenhancer</id>
     <title>CCEnhancer</title>
     <version>{{PackageVersion}}</version>
     <authors>SingularLabs</authors>
-    <owners>tonigellida</owners>
+    <owners>doc</owners>
     <summary>
 	A small tool which adds support for over 900 new programs into the popular program CCleaner.
 	</summary>
@@ -21,6 +21,6 @@
     <copyright></copyright>
     <licenseUrl>http://en.wikipedia.org/wiki/Freeware</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<iconUrl>https://cdn.rawgit.com/adgellida/chocolateyautomaticpackages/master/icons/{{PackageName}}.png</iconUrl>
+	<iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/ccenhancer.png</iconUrl>
   </metadata>
 </package>
