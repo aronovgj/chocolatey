@@ -2,21 +2,19 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>7taskbartweaker</id>
-    <title>7+ Taskbar Tweaker</title>
-    <version>4.5.6</version>
-    <authors>RaMMicHaeL</authors>
+    <id>msiafterburner</id>
+    <title>MSI Afterburner</title>
+    <version>4.1.0</version>
+    <authors>MSI</authors>
     <owners>doc</owners>
-    <summary>7+ Taskbar Tweaker allows you to configure various aspects of the Windows taskbar.</summary>
-    <description>7+ Taskbar Tweaker allows you to configure various aspects of the Windows taskbar.
-Most of the configuration options it provides can’t be tweaked using the taskbar properties or the registry.
-The tweaker is designed for Windows 7 and Windows 8.</description>
-    <projectUrl>http://rammichael.com/7-taskbar-tweaker</projectUrl>
-    <tags>taskbar tweaker</tags>
+    <summary>MSI Afterburner is ultimate graphics card utility, co-developed by MSI and RivaTuner teams.</summary>
+    <description>MSI Afterburner is ultimate graphics card utility, co-developed by MSI and RivaTuner teams.</description>
+    <projectUrl>http://event.msi.com/vga/afterburner</projectUrl>
+    <tags>msi afterburner msiafterburner graphics video card overclock underclock fan voltage</tags>
     <copyright></copyright>
-    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <licenseUrl>https://github.com/aronovgj/chocolatey/blob/master/msiafterburner/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/7taskbartweaker.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/msiafterburner.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>
