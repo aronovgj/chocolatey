@@ -1,6 +1,14 @@
-$packageName = '7taskbartweaker'
+$packageName = 'msiafterburner'
+new-item "${env:temp}\afterburner" -itemtype directory
+$unpackfile = "${env:temp}\afterburner\afterburner.zip"
+$unpackdir = "${env:temp}\afterburner"
+$url = 'http://download.msi.com/uti_exe/vga/MSIAfterburnerSetup301.zip'
+Get-ChocolateyWebFile $packageName $unpackfile $url
+
+Get-ChocolateyUnzip $unpackfile $unpackdir
+
+$file = "${env:temp}\afterburner\MSIAfterburnerSetup301.exe"
 $fileType = 'exe'
 $silentArgs = '/S'
-$url = 'http://www.rammichael.com/downloads/7tt_setup.exe' 
-Stop-Process -ProcessName 7+*
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url
+Stop-Process -ProcessName MSIAfterburner*
+Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file
