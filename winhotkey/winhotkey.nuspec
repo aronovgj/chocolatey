@@ -22,7 +22,7 @@ When running, the program sits in the system tray. Double-clicking on the system
     <projectUrl>http://directedge.us/content/winhotkey</projectUrl>
     <tags>hotkey key winhotkey</tags>
     <copyright></copyright>
-    <licenseUrl>http://creativecommons.org/licenses/by-nc-sa/3.0/us/</licenseUrl>
+    <licenseUrl>https://github.com/aronovgj/chocolatey/blob/master/winhotkey/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/winhotkey.jpeg</iconUrl>
     <releaseNotes></releaseNotes>
