@@ -8,7 +8,7 @@
     <authors>Horst Scheuer</authors>
     <owners>Doc</owners>
     <summary>Provides some Hotkeys. E.g. allows you to drag or resize a window with Alt + right mouse button or Alt + left mouse button</summary>
-    <description>Provides some Hotkeys. E.g. allows you to drag or resize a window with Alt + right mouse button or Alt + left mouse button. Unpacks to C:\Program Files (x86)\MyHotkey. Only in German.</description>
+    <description>Provides some Hotkeys. E.g. allows you to drag or resize a window with Alt + right mouse button or Alt + left mouse button. The software is only available in German.</description>
     <projectUrl>http://horst-scheuer.de/win-x-menue-windows-7/</projectUrl>
     <tags>MyHotkey hotkey</tags>
     <copyright></copyright>
