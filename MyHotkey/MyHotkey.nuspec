@@ -14,7 +14,7 @@
     <copyright></copyright>
     <licenseUrl>http://creativecommons.org/licenses/by-nc-sa/3.0/deed.de</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/myHotkey.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/myhotkey.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>
