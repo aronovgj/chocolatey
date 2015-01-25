@@ -17,7 +17,7 @@ Note: The program is not free anymore. 3.1.2.1 is the last free version.
     <copyright></copyright>
     <licenseUrl>http://www.metageek.net/legal/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/34f87e5f6b8aadb5586cf6a7fcc1eef446688ddc/icons/inssider.png</iconUrl>
+	<iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/inssider.png</iconUrl>
 	<dependencies>
         <dependency id="autohotkey.portable" />
     </dependencies>	
