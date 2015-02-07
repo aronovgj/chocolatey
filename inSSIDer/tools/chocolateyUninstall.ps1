@@ -27,9 +27,7 @@ function Find-CID {
     $registryPath = Find-CID $uroot64 "inSSIDer" "$version"
   }
   if ($registryPath -eq $null) {
-    Write-ChocolateyFailure $packageName "$packageName is not found."
   } else {
     Start-Process 'AutoHotkey' $ahkFile	
     Uninstall-ChocolateyPackage $packageName $fileType $registryPath -validExitCodes @(0)
-    Write-ChocolateySuccess $packageName
   }
