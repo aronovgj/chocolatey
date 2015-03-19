@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>rainmeter</id>
-        <version>3.2.0.2380-beta</version>
+        <version>3.2.0.2383-RC1</version>
         <title>Rainmeter</title>
         <authors>Rainmeter</authors>
         <owners>doc</owners>
@@ -16,7 +16,8 @@
 http://rainmeter.net/beta-3-2
 		</releaseNotes>
 		<copyright>Rainmeter</copyright>
-        <tags>rainmeter customization </tags>		<iconUrl>https://rawgit.com/aronovgj/chocolatey/a4d186f47d8efacaed3cca1b010799566fc9253f/icons/rainmeter.png</iconUrl>
+        <tags>rainmeter customization </tags>		
+		<iconUrl>https://rawgit.com/aronovgj/chocolatey/a4d186f47d8efacaed3cca1b010799566fc9253f/icons/rainmeter.png</iconUrl>
     </metadata>
   <files>
     <file src="tools\**" target="tools" />
