@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>jdownloaderbeta</id>
+    <id>jdownloader</id>
     <title>JDownloader BETA</title>
-    <version>2.0</version>
+    <version>2.0-beta20150321</version>
     <authors>AppWork UG</authors>
     <owners>doc</owners>
     <summary></summary>
@@ -17,6 +17,6 @@ JDownloader can import CCF, RSDF and the new DLC files.
     <copyright></copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/jdownloaderbeta.png</iconUrl>
+	<iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/jdownloader.png</iconUrl>
   </metadata>
 </package>
