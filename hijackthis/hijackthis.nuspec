@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>hijackthis</id>
+    <title>HijackThis</title>
+    <version>2.0.5-beta</version>
+    <authors>Trend Micro</authors>
+    <owners>Doc</owners>
+    <summary>HijackThis is a program that can be used to quickly spot home page hijackers and startup programs that you do not want to start automatically. </summary>
+    <description>HijackThis is a program that can be used to quickly spot home page hijackers and startup programs that you do not want to start automatically. This program is a not anti-virus program, but rather a enumerator that lists programs that are starting up automatically on your computer as well as other configuration information that is commonly hijacked. Since there is no filter on what it reports, you should research each entry before you remove anything using this tool.</description>
+    <projectUrl>http://sourceforge.net/projects/hjt/</projectUrl>
+    <tags>tuneup malware removal pc cleanup IT adware toolbars unwanted programs pup portable </tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/7ac7b7df50187e132dead8534bf96086d725b6db/icons/hijackthis.jpg</iconUrl>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

@@ -3,7 +3,7 @@
   <metadata>
     <id>jdownloader</id>
     <title>JDownloader BETA</title>
-    <version>2.0-beta20150321</version>
+    <version>2.0-beta201506221</version>
     <authors>AppWork UG</authors>
     <owners>doc</owners>
     <summary></summary>
@@ -11,12 +11,14 @@
 JDownloader simplifies and improves the process of downloading files from "free" file hosting sites like Rapidshare, MEGA, Mediafire, 4Shared, uploaded.to, Putlocker, Cyberlocker, etc.
 JDownloader offers downloading in multiple parallel streams, CAPTCHA recognition, and automatic file extraction.
 JDownloader can import CCF, RSDF and the new DLC files.
-	</description>
+    </description>
     <projectUrl>http://jdownloader.org/download/offline</projectUrl>
-    <tags>beta-version notSilent download-manager jdownloader java</tags>
+    <tags>beta-version download-manager jdownloader java</tags>
     <copyright></copyright>
+    <dependencies>
+        <dependency id="jre8" />
+    </dependencies>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/master/icons/jdownloader.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/3a4f137eeca3f3487b56843f9e6b514a86083be5/icons/jdownloader.png</iconUrl>
   </metadata>
 </package>
