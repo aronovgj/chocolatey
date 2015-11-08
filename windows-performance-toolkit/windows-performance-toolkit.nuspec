@@ -3,8 +3,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>windows-performance-toolkit</id>
-    <title>testpackage</title>
-    <version>Windows Performance Toolkit</version>
+    <title>Windows Performance Toolkit</title>
+    <version>8.1</version>
     <authors>Microsoft</authors>
     <owners>doc</owners>
     <summary>The Windows® Performance Toolkit consists of two independent tools: Windows® Performance Recorder (WPR) and Windows® Performance Analyzer (WPA). In addition, support is maintained for the previous command-line tool, Xperf. However, Xperfview is no longer supported. All recordings must be opened and analyzed by using WPA.</summary>
@@ -13,7 +13,7 @@ The Windows® Performance Toolkit consists of two independent tools: Windows® P
     </description>
     <projectUrl>https://msdn.microsoft.com/de-de/library/hh162945.aspx</projectUrl>
     <tags>performance toolkit tune speed boot</tags>
-    <licenseUrl>https://raw.githubusercontent.com/aronovgj/choco-auto/master/windows-performance-toolkit/license.txt</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/aronovgj/chocolatey/master/windows-performance-toolkit/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
 </package>
