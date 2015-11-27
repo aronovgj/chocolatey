@@ -3,41 +3,6 @@
 # Microsoft .NET Framework v2.0 must be installed. If you have not already installed this version of the .NET Framework, you can do so from the following URL: http://msdn2.microsoft.com/en-us/netframework/aa731542.aspx
 # Note that MSKLC 1.4 is a 32-bit application. It will run on 64-bit systems, but in 32-bit mode.
 
-function Get-NetFrameworkSetupVersions
-{
-    Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP' -recurse |
-    Get-ItemProperty -name Version,Release -EA 0 |
-    Where { $_.PSChildName -match '^(?!S)\p{L}'} |
-    Select PSChildName, Version, Release
-}
-
-function Test-NetFrameworkSetupVersion
-{
-    [CmdLetBinding()]
-    [OutputType([bool])]
-    param
-    (
-        [Parameter(Mandatory=$True)]
-        [Version]$MinimumNetVersionRequired
-    )
-
-    $installedNetFrameworkInstalledVersions = Get-NetFrameworkSetupVersions | Select Version
-
-    [bool]$hasMinimumVersionInstalled = $false
-
-    foreach ($installedNetFrameworkInstalledVersion in $installedNetFrameworkInstalledVersions)
-    {   
-        Write-Debug "Installed .Net version: $($installedNetFrameworkInstalledVersion.Version)"
-        if ($installedNetFrameworkInstalledVersion.Version -ge $MinimumNetVersionRequired) 
-        { 
-            $hasMinimumVersionInstalled = $true
-            break
-        }
-    }
-
-    return $hasMinimumVersionInstalled
-}
-
 function Test-OSVersion
 {
     [CmdLetBinding()]
@@ -75,31 +40,24 @@ if ($(Test-OSVersion "5.0") -or # Windows 2000
     $(Test-OSVersion "6.0") -or # Windows Vista
     $(Test-OSVersion "6.1")) # Windows 7
 {
-    if (Test-NetFrameworkSetupVersion "2.0")
-    {
-        # Copy and paste from current package
-        $packageName = 'keyboard-layout-creator'
-        $fileType = 'msi'
-        $silentArgs = '/qn'
-        $url = 'http://download.microsoft.com/download/1/1/8/118aedd2-152c-453f-bac9-5dd8fb310870/MSKLC.exe'
- 
-        $unpackDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-        $unpackFile = Join-Path $unpackDir 'mklc.zip'
- 
-        Get-ChocolateyWebFile $packageName $unpackFile $url
-        Get-ChocolateyUnzip $unpackFile $unpackDir
-        $fileMsi = Join-Path $unpackDir "MSKLC.msi"
-        $fileExe = Join-Path $unpackDir "setup.exe"
- 
-        Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $fileMsi
-        Remove-Item $unpackFile -Recurse -Force
-        Remove-Item $fileExe -Recurse -Force
-        Remove-Item $fileMsi -Recurse -Force
-    }
-    else
-    {
-        Write-Warning "You need to install .NET Framework 2.0 or later. Use `"Choco Install dotnet4.5.1`" or for other versions have a look at: https://chocolatey.org/packages?q=dotnet"
-    }
+    # Copy and paste from current package
+    $packageName = 'keyboard-layout-creator'
+    $fileType = 'msi'
+    $silentArgs = '/qn'
+    $url = 'http://download.microsoft.com/download/1/1/8/118aedd2-152c-453f-bac9-5dd8fb310870/MSKLC.exe'
+
+    $unpackDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+    $unpackFile = Join-Path $unpackDir 'mklc.zip'
+
+    Get-ChocolateyWebFile $packageName $unpackFile $url
+    Get-ChocolateyUnzip $unpackFile $unpackDir
+    $fileMsi = Join-Path $unpackDir "MSKLC.msi"
+    $fileExe = Join-Path $unpackDir "setup.exe"
+
+    Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $fileMsi
+    Remove-Item $unpackFile -Recurse -Force
+    Remove-Item $fileExe -Recurse -Force
+    Remove-Item $fileMsi -Recurse -Force
 }
 else
 {
