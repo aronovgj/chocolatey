@@ -17,6 +17,9 @@ function Test-OSVersion
 
     [version]$currentOSVersion = [System.Environment]::OSVersion.Version
     Write-Debug "Current OS Version: $currentOSVersion"
+    
+    [string]$operatingSystemCaption = (Get-WmiObject -class Win32_OperatingSystem).Caption
+    Write-Debug "Current OS Name: $operatingSystemCaption"
 
     [bool]$matchRequiredOsVersion = $false
 
@@ -26,7 +29,7 @@ function Test-OSVersion
 
         if (-not $CheckAgaintWorkstationVersionOnly)
         {
-            [bool]$isWindowsServer = (Get-WmiObject -class Win32_OperatingSystem).Caption.ToUpperInvariant().Contains("SERVER")
+            [bool]$isWindowsServer = $operatingSystemCaption.ToUpperInvariant().Contains("SERVER")
             $matchRequiredOsVersion = !$isWindowsServer
         }
     }
@@ -34,11 +37,14 @@ function Test-OSVersion
     return $matchRequiredOsVersion
 }
 
-if ($(Test-OSVersion "5.0") -or # Windows 2000
-    $(Test-OSVersion "5.1") -or # Windows XP
-    $(Test-OSVersion "5.2" $false) -or # Windows Server 2003
-    $(Test-OSVersion "6.0") -or # Windows Vista
-    $(Test-OSVersion "6.1")) # Windows 7
+[bool]$isWindowsServer2012R2 = $(Test-OSVersion "6.3" $false)
+
+if ($isWindowsServer2012R2)
+{
+    # [TODO] Improve the error message
+    Write-Warning "OS not supported."
+}
+else
 {
     # Copy and paste from current package
     $packageName = 'keyboard-layout-creator'
@@ -58,9 +64,4 @@ if ($(Test-OSVersion "5.0") -or # Windows 2000
     Remove-Item $unpackFile -Recurse -Force
     Remove-Item $fileExe -Recurse -Force
     Remove-Item $fileMsi -Recurse -Force
-}
-else
-{
-    # [TODO] Improve the error message
-    Write-Warning "OS not supported."
 }
