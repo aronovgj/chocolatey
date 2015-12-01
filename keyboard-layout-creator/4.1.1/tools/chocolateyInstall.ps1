@@ -42,7 +42,7 @@ function Test-OSVersion
 if ($isWindowsServer2012R2)
 {
     # [TODO] Improve the error message
-    Write-Warning "OS not supported."
+    throw "OS not supported."
 }
 else
 {
