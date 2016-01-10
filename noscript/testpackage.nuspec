@@ -19,8 +19,8 @@ Watch the "Block scripts in Firefox" video by cnet.
 
 Staying safe has never been so easy!
 
-Note: this addon will be installed only for the default profile. You will have to confirm in Firefox if you want to enable the addon.
-	
+***Note:*** this addon will be installed for all profiles. You can not remove the addons through Firefox - only manually by removing the folder from `\extensions` or by uninstalling the package. You will have to confirm in Firefox if you want to enable the addon (thats a security feature of Firefox).
+The package should always install the newest version, independent of the package version. Subsequent updates should be dealt with automatically by Firefox.
     </description>
     <projectUrl>https://noscript.net/</projectUrl>
     <tags>noscript java javascript block ads script </tags>

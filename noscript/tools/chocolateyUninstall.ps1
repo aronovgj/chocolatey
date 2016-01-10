@@ -1,7 +1,16 @@
 $extensionID = "{73a6fe31-595d-460b-a920-fcc0f8843232}"
-$profileFolder = gci -path "$env:APPDATA\Mozilla\Firefox\Profiles" -filter "*default*" | Select-Object -Expand FullName
-$extensionsFolder = Join-Path $profileFolder "extensions"
+
+if(test-path 'hklm:\SOFTWARE\Mozilla\Firefox\TaskBarIDs'){
+	$installDir = Get-Item -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\Firefox\TaskBarIDs | Select-Object -ExpandProperty Property
+}
+if(test-path 'hklm:\SOFTWARE\Wow6432Node\Mozilla\Firefox\TaskBarIDs'){
+	$installDir = Get-Item -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Mozilla\Firefox\TaskBarIDs | Select-Object -ExpandProperty Property
+}
+
+
+$browserFolder = Join-Path $installDir "browser"
+$extensionsFolder = Join-Path $browserFolder "extensions"
 $extFolder = Join-Path $extensionsFolder "$extensionID"
 
-Remove-Item "$extFolder" -Force -Recurse
+Remove-Item "$extFolder" -Force -Recurse -ErrorAction SilentlyContinue
 
