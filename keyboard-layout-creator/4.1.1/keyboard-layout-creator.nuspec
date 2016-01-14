@@ -16,12 +16,14 @@ The Microsoft Keyboard Layout Creator extends the international functionality of
 
 - Base a new layout on an existing one
 
+- Modify the functionality of dead keys
+
 - Modify an existing keyboard layout (.KLC) file and build a new layout from it
 
 - Package the resulting keyboard layouts for subsequent deployment and installation.
 </description>
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=22339</projectUrl>
-    <tags>keyboard layout keys dead</tags>
+    <tags>keyboard layout keys</tags>
     <copyright></copyright>
     <licenseUrl>https://cdn.rawgit.com/aronovgj/chocolatey/52756e18e184135681c5a9d5da3b630bc03ef566/keyboard-layout-creator/4.1.1/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
