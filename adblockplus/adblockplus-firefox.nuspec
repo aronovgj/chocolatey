@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>adblockplus-firefox</id>
+    <title>Adblock Plus for Firefox</title>
+    <version>2.7.1</version>
+    <authors>Wladimir Palant</authors>
+    <owners>doc</owners>
+    <summary> Adblock Plus is a free extension that allows you to - among other things - block annoying ads, disable tracking and block domains known to spread malware. Available for Android, Chrome, Firefox, Internet Explorer, Maxthon, Opera, Safari and Yandex, Adblock Plus uses filters that you choose to block all unwanted elements.
+
+Created by Wladimir Palant in 2006, Adblock Plus is an open source project. In 2011, Palant, together with Till Faida, founded Eyeo to make its development sustainable. </summary>
+    <description> Adblock Plus is a free extension that allows you to - among other things - block annoying ads, disable tracking and block domains known to spread malware. Available for Android, Chrome, Firefox, Internet Explorer, Maxthon, Opera, Safari and Yandex, Adblock Plus uses filters that you choose to block all unwanted elements.
+
+Created by Wladimir Palant in 2006, Adblock Plus is an open source project. In 2011, Palant, together with Till Faida, founded Eyeo to make its development sustainable. 
+    </description>
+    <projectUrl>https://adblockplus.org</projectUrl>
+    <tags>adblock plus ads blocker advertise firefox</tags>
+    <licenseUrl>https://adblockplus.org/license-headers</licenseUrl>
+    <releaseNotes>https://adblockplus.org/releases/</releaseNotes>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<projectSourceUrl>https://github.com/adblockplus/adblockplus</projectSourceUrl>
+    <docsUrl>https://adblockplus.org/en/documentation</docsUrl>
+    <bugTrackerUrl>https://adblockplus.org/forum/viewforum.php?f=11</bugTrackerUrl>
+    <dependencies>
+        <dependency id="firefox" />
+    </dependencies>
+    <packageSourceUrl>https://github.com/aronovgj/chocolatey</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/cf0637025a4b4a83d7e32b7b3c63274f7e7084b2/icons/adblockplus-firefox.png</iconUrl>
+  </metadata>
+</package>
